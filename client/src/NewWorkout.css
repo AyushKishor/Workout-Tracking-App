@@ -1,0 +1,70 @@
+/* NewWorkout.css */
+
+.new-workout-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.new-workout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.new-workout-form label {
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.new-workout-form input[type="text"] {
+    width: 100%; /* Adjust width as necessary */
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.new-workout-form button {
+    width: auto;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-workout-form button:hover {
+    background-color: #218838;
+}
+
+.exercise {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+
+.exercise p {
+    font-size: 1rem;
+    color: #212529;
+}
+
+.end-workout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.end-workout-button:hover {
+    background-color: #0056b3;
+}

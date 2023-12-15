@@ -1,0 +1,102 @@
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* BUTTON STYLES */
+button {
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+/* CARD STYLES */
+.past-workouts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.workout {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workout h2 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.workout-exercises {
+    margin-bottom: 1rem;
+}
+
+.exercise {
+    margin-bottom: 0.5rem;
+}
+
+.exercise h3 {
+    margin-bottom: 0.5rem;
+    color: #343a40;
+}
+
+.exercise p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.workout form {
+    display: inline-block; /* Makes forms line up horizontally */
+    margin-right: 10px; /* Adds spacing between the forms */
+}
+
+.workout form:last-child {
+    margin-right: 0; /* Removes margin from the last form/button */
+}
+
+@media screen and (max-width: 768px) {
+    .workout {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .workout {
+        width: 100%;
+    }
+}

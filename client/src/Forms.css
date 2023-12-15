@@ -1,0 +1,94 @@
+/* REGISTER AND LOGIN STYLES */
+
+/* Main Container Style */
+.main {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Navigation Buttons */
+.main a button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; /* Spacing between buttons */
+}
+
+.main a button:hover {
+  background-color: #0056b3;
+}
+
+
+.form {
+  background-color: #fff;
+  display: block;
+  padding: 3rem;
+  max-width: 350px;
+  border-radius: 8px; /* Adjusted for a more subtle curve */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin: 4em auto; /* Adjusted for better vertical spacing */
+  text-align: center;
+}
+
+.form-title {
+  font-size: 1.5rem; /* Slightly larger for emphasis */
+  margin-bottom: 1.5rem; /* Added for spacing below the title */
+  color: #333; /* Darker color for better readability */
+}
+
+.input-container {
+  margin-bottom: 1rem; /* Added spacing between input fields */
+  position: relative;
+}
+
+.input-container input, .form button {
+  width: 100%; /* Full width for better consistency */
+  padding: 0.75rem; /* Uniform padding */
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem; /* Subtle border-radius */
+  font-size: 1rem; /* Larger font size for better readability */
+}
+
+.input-container input {
+  margin-bottom: 0; /* Removes the default margin */
+}
+
+.input-container span {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.submit {
+  background-color: #007bff; /* Brighter color for the submit button */
+  color: #fff;
+  border: none;
+  margin-top: 1rem; /* Added space above the submit button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #0056b3; /* Darker shade on hover for interaction feedback */
+}
+
+.signup-link {
+  margin-top: 2rem; /* Added spacing above the sign-up link */
+}
+
+.signup-link a {
+  color: #007bff; /* Match the button color for consistency */
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline; /* Underline on hover for interaction feedback */
+}
+
+
