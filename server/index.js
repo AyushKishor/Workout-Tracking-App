@@ -3,7 +3,6 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
-import bcrypt from 'bcrypt';
 import bcryptjs from 'bcryptjs';
 
 const app = express();
@@ -12,7 +11,7 @@ dotenv.config();
 
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your frontend domain
+    origin: 'https://workout-app-client-theta.vercel.app', // Replace with your frontend domain
     credentials: true, // Include credentials (cookies, etc.)
 }));
 

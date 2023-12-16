@@ -9,7 +9,7 @@ function Login(){
 
     const handleLogin = async(e)=>{
         e.preventDefault();
-        const response = await fetch('http://localhost:8000/api/login',
+        const response = await fetch('https://workout-app-server-five.vercel.app/api/login',
         {
             method: "POST",
             headers:{

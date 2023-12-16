@@ -25,7 +25,7 @@ function UpdateWorkout(){
 
     const handleUpdateWorkout = async(e) =>{
       e.preventDefault();
-      const response = await fetch('http://localhost:8000/api/updateWorkout',{
+      const response = await fetch('https://workout-app-server-five.vercel.app/api/updateWorkout',{
         method: 'POST',
         headers:{
           "Content-Type": "application/json"

@@ -102,7 +102,7 @@ function NewWorkout (){
         const formattedWorkoutDate = workoutDate.toLocaleDateString('en-GB')
         setWorkoutName(formattedWorkoutDate);
     
-        const response = await fetch('http://localhost:8000/api/newWorkout',{
+        const response = await fetch('https://workout-app-server-five.vercel.app/api/newWorkout',{
             method: 'POST',
             headers:{
                 "Content-Type": "application/json"
