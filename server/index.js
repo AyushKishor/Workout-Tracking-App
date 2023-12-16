@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
+import bcryptjs from 'bcryptjs';
 
 const app = express();
 dotenv.config();
@@ -40,7 +41,7 @@ app.post("/api/register", async (req,res)=>{
     }
 
     const {email,password} = req.body;
-    const hashedPassword = await bcrypt.hash(password,10);
+    const hashedPassword = await bcryptjs.hashSync(password,10);
     const user = new User({email,password: hashedPassword});
     const userRegistered = await user.save();
     if (userRegistered){
@@ -55,7 +56,7 @@ app.post("/api/register", async (req,res)=>{
 app.post("/api/login", async (req,res)=>{
     const {email,password} = req.body;
     const foundUser = await User.findOne({email: email})
-    const passwordMatch = await bcrypt.compare(password,foundUser.password);
+    const passwordMatch = await bcryptjs.compare(password,foundUser.password);
     
 
     if(!passwordMatch){
