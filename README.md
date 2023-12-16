@@ -5,5 +5,5 @@
 - [x] Dashboard with Past Workouts(Read)
 - [x] Update Workouts(Update)
 - [x] Delete Workouts(Delete)
-- [ ] Deployment
+- [x] Deployment
 
